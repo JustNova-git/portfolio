@@ -1,0 +1,131 @@
+.header {
+    background: url(../img/header-background.jpg) no-repeat;
+    background-size: cover;
+    &__navbar {
+        padding-top: 20px;
+        position: fixed;
+        background: #1b1515d5;
+        width: 100%;
+        z-index: 9;
+        padding-bottom: 30px;
+    }
+
+    &__list {
+        position: relative;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            &:active,
+            &:focus {
+                color: #f06000;
+            }
+            &:hover {
+                color: #f06000;
+            }
+            transition: 0.3s color linear;
+            margin-left: 20px;
+            display: inline-block;
+            line-height: 32px;
+            color: #fff;
+            font-size: 21px;
+        }
+        li {
+            &:first-child {
+                margin-left: -20px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .header__list.active {
+        display: flex;
+        height: 100vh;
+
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin: 0;
+        }
+        li {
+            margin: 0;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    #toggle {
+        right: 50px;
+        top: 20px;
+        display: block;
+        position: absolute;
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        i {
+            font-size: 21px;
+            color: $orange;
+        }
+    }
+
+    &__content {
+        padding-top: 120px;
+        text-align: center;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            padding-top: 50px;
+        }
+    }
+    &__title {
+        padding-top: 20px;
+        font-size: 60px;
+        color: #fff;
+    }
+    &__text {
+        padding-top: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 20px;
+        letter-spacing: 2.2px;
+        color: $color1;
+        line-height: 37px;
+        @media screen and (max-width: 768px) {
+            max-width: 530px;
+        }
+        @media screen and (max-width: 425px) {
+            max-width: 300px;
+            line-height: 29px;
+            letter-spacing: 1px;
+        }
+    }
+    hr {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    &__contact_a {
+        @media (max-height: 420px) {
+            display: none;
+        }
+    }
+    &__contact {
+        padding-bottom: 50px;
+        a {
+            color: #fff;
+            margin: 0 20px;
+            font-size: 25px;
+            &:hover {
+                color: #11abb0;
+                transition: 0.3s color linear;
+            }
+        }
+    }
+
+    height: 100vh;
+}

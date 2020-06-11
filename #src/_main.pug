@@ -1,0 +1,50 @@
+section.about
+    a(id="about")
+    .container
+        .about__content
+            .about__img
+                .about__photo.ibg
+                    img(src="img/photo/photo_about_1.jpg" alt="")
+            .about__description
+                .about__info
+                    .about__title.title Обо мне
+                    .about__text Контакты постоянные. Оплата вёрстки всегда по договору, чаще всего будет занижена из-за необходимости наращивания портфолио. Кодовое имя: JustNova.
+                .about__contact
+                    .about__contact-desc
+                        .about__title.title 
+                        ul.about__text
+                            -
+                                var list = ["Галимов Вадим", "г. Челябинск", "79090747526 ", "black2016white@mail.ru"]
+                            each item in list
+                                li= item
+                    .about__contact-btn 
+                        input(type="button" value="Скачать резюме") 
+section.work
+    a(id="work")
+    .work__container
+        .work__title Примеры вёрстки
+        .work__blocks
+            a(href="work/Smart_Agency_Landign_Page/app/index.html").work__block
+                .work__block-info
+                    .work__block-title Smart Agency Landign Page
+                    .work__block-tag Landign Page
+                    .work__block-link 
+                        i.fa.fa-plus
+                img(src="img/photo/photo_about_2.jpg" alt="")
+section.instrument
+    a(id="instr")
+    .container
+        h2.instrument__title Инструменты при работы
+            .instrument__blocks
+                .instrument__block
+                    i.fa.fa-html5
+                .instrument__block
+                    i.fab.fa-css3-alt
+                .instrument__block
+                    i.fab.fa-gulp
+                .instrument__block
+                    i.fa.fa-dog
+                .instrument__block
+                    i.fab.fa-sass
+                .instrument__block
+                    i.fab.fa-js
