@@ -61,7 +61,7 @@
 }
 
 .work {
-    margin-top: 150px;
+    margin-top: 50px;
     &__container {
         max-width: 900px;
         margin: 0 auto;
@@ -123,12 +123,15 @@
         text-align: center;
     }
     &__blocks {
-        margin-top: 20px;
+        margin-top: 40px;
         display: flex;
         justify-content: space-around;
+        @media screen and (max-width: 426px){
+           flex-wrap: wrap;
+        }
     }
     &__block {
-        margin-top: 40px;
+       margin: 10px;
         color: $color3;
         i {
             font-size: 49px;

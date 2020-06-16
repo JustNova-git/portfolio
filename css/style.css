@@ -358,7 +358,7 @@ li {
 }
 
 .work {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .work__container {
@@ -429,13 +429,19 @@ li {
 }
 
 .instrument__blocks {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
 }
 
+@media screen and (max-width: 426px) {
+  .instrument__blocks {
+    flex-wrap: wrap;
+  }
+}
+
 .instrument__block {
-  margin-top: 40px;
+  margin: 10px;
   color: #11ABB0;
 }
 
@@ -460,6 +466,7 @@ footer i {
 footer span {
   color: #fff;
   font-size: 20px;
+  white-space: nowrap;
 }
 
 footer h4 {
