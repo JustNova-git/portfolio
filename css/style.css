@@ -121,7 +121,7 @@ li {
 }
 
 .header {
-  background: url(../img/header-background.jpg) no-repeat;
+  background-image: url("../img/header-background.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -150,7 +150,7 @@ li {
   display: inline-block;
   line-height: 32px;
   color: #fff;
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .header__list a:active, .header__list a:focus {
@@ -183,7 +183,7 @@ li {
 }
 
 .header .header__list.active li {
-  margin: 0;
+  margin: 15px;
 }
 
 .header .header__list.active li:first-child {
@@ -229,7 +229,7 @@ li {
 
 .header__text {
   padding-top: 20px;
-  border-bottom: 1px #A1A1A1 solid;
+  border-bottom: 1px #a1a1a1 solid;
   padding-bottom: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -307,6 +307,16 @@ li {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  background-image: url("../img/photo/photo_about_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@supports (-webkit-appearance: none) {
+  .about__photo {
+    background-image: url("../img/photo/photo_about_1.webp");
+  }
 }
 
 .about__description {
@@ -472,4 +482,49 @@ footer span {
 footer h4 {
   color: #002;
   font-size: 15px;
+}
+
+@supports (-webkit-appearance:none){
+.header{background-image:url("../img/header-background.webp")}
+.about__photo{background-image:url("../img/photo/photo_about_1.webp")}
+}
+
+ @media (prefers-reduced-motion: reduce){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 425px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-height: 420px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 426px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }

@@ -3,8 +3,7 @@ section.about
     .container
         .about__content
             .about__img
-                .about__photo.ibg
-                    img(src="img/photo/photo_about_1.jpg" alt="")
+                .about__photo
             .about__description
                 .about__info
                     h2.about__title.title Обо мне
@@ -24,13 +23,15 @@ section.work
     .work__container
         h2.work__title Примеры вёрстки
         .work__blocks
-            a(href="work/Smart_Agency_Landign_Page/index.html" target="_blank").work__block
-                .work__block-info
-                    .work__block-title Smart Agency Landign Page
-                    .work__block-tag Landign Pagе
-                    .work__block-link 
-                        i.fa.fa-plus
-                img(src="img/photo/photo_about_2.jpg" alt="")
+            //- a(href="work/Smart_Agency_Landign_Page/index.html" target="_blank").work__block
+            //-     .work__block-info
+            //-         .work__block-title Smart Agency Landign Page
+            //-         .work__block-tag Landign Pagе
+            //-         .work__block-link 
+            //-             i.fa.fa-plus
+            //-     picture
+            //-         source(srcset='img/photo/photo_about_0.webp' type='image/webp')
+            //-         img(src='img/photo/photo_about_0.jpg', alt='')
 section.instrument
     a(id="instr")
     .container
@@ -48,3 +49,4 @@ section.instrument
                 i.fab.fa-sass
             .instrument__block
                 i.fab.fa-js
+    
